@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CYBER_QUEST // RETRO PORTFOLIO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="crt-active">
+  <!-- Scanlines & CRT FX -->
+  <div class="crt-overlay" aria-hidden="true"></div>
+
+  <div class="arcade-shell">
+    <!-- Top HUD Header -->
+    <header class="hud-panel">
+      <div class="hud-title-zone">
+        <h1 class="glitch-title" data-text="CYBER_QUEST.EXE">CYBER_QUEST.EXE</h1>
+        <p class="hud-subtitle">&gt; OPERATOR LABS // ENTERPRISE READINESS PORTFOLIO</p>
+      </div>
+     
+
+      <div class="hud-stats-zone">
+        <div class="stat-box">
+          <span class="stat-label">LEVEL</span>
+          <span class="stat-value" id="hud-level">LV. 01</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-label">CLASS</span>
+          <span class="stat-value" id="hud-rank">RECON OPERATOR</span>
+        </div>
+        <div class="stat-box xp-container">
+          <div class="stat-label-flex">
+            <span>XP PROGRESS</span>
+            <span id="hud-xp-text">0 / 1500 XP</span>
+          </div>
+          <div class="xp-bar-outer">
+            <div class="xp-bar-fill" id="hud-xp-bar" style="width: 0%;"></div>
+          </div>
+        </div>
+        <div class="stat-box">
+          <span class="stat-label">CLEARED</span>
+          <span class="stat-value" id="hud-cleared">0 / 0</span>
+        </div>
+      </div>
+
+      <div class="hud-controls">
+        <button id="toggle-sfx" class="retro-btn btn-small">SFX: ON</button>
+        <button id="toggle-crt" class="retro-btn btn-small">CRT: ON</button>
+        <button id="reset-progress" class="retro-btn btn-small btn-danger">RESET</button>
+      </div>
+      <div class="hud-controls">
+  <button id="toggle-fullscreen" class="retro-btn btn-small">[⛶ FULLSCREEN]</button>
+  <button id="toggle-sfx" class="retro-btn btn-small">SFX: ON</button>
+  <button id="toggle-crt" class="retro-btn btn-small">CRT: ON</button>
+  <button id="reset-progress" class="retro-btn btn-small btn-danger">RESET</button>
+</div>
+    </header>
+
+    <!-- Filter Navigation Tabs -->
+   <!-- Filter Navigation Tabs -->
+    <nav class="arcade-tabs">
+      <button class="tab-btn active" data-filter="all">[ ALL ]</button>
+      <button class="tab-btn" data-filter="netsec">[ NET_SEC ]</button>
+      <button class="tab-btn" data-filter="appsec">[ APP_SEC ]</button>
+      <button class="tab-btn" data-filter="crypto">[ CRYPTO ]</button>
+      <button class="tab-btn" data-filter="re-malware">[ MALWARE_RE ]</button>
+      <button class="tab-btn" data-filter="forensics">[ FORENSICS ]</button>
+      <button class="tab-btn" data-filter="ai-sec">[ AI_ML_SEC ]</button>
+      <button class="tab-btn" data-filter="iot-hw">[ IOT_HARDWARE ]</button>
+      <button class="tab-btn" data-filter="soc-siem">[ SIEM_INTEL ]</button>
+    </nav>
+
+    <!-- Project Cards Grid -->
+    <main class="quest-grid" id="project-container"></main>
+
+    <!-- Footer Terminal -->
+    <footer class="arcade-footer">
+      <span>[SYSTEM] READY. AUDIT LOG INITIALIZED.</span>
+      <span>READY FOR DEPLOYMENT // PRESS START TO CODE</span>
+    </footer>
+  </div>
+
+  <!-- Quest Step Inspection Modal -->
+  <div class="modal-backdrop" id="quest-modal" aria-hidden="true">
+    <div class="modal-window">
+      <div class="modal-header">
+        <span class="modal-terminal-tag">&gt; DEEP_DIVE_SPECS.LOG</span>
+        <button class="close-btn" id="modal-close-btn">[X]</button>
+      </div>
+      <div class="modal-body" id="modal-content">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+<!-- Ensure defer is present and the filename matches exactly -->
+  <script src="app.js" defer></script>
+</body>
+</html>
+  
+</body>
+</html>
